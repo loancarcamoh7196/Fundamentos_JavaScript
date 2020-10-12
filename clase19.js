@@ -43,6 +43,10 @@ var personasAltas = personas.filter(esAlta)
 //   return persona.altura > 1.8
 // })
 
+/**
+ * funcion que va convertir altura de persona a cms
+ * @param {*} persona 
+ */
 // persona.altura = persona.altura * 100
 const pasarAlturaACms = persona => ({
   ...persona,

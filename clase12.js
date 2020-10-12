@@ -51,7 +51,15 @@ const MAYORIA_DE_EDAD = 18
 // const esMayorDeEdad = function (persona) {
 //   return persona.edad >= MAYORIA_DE_EDAD
 // }
-const esMayorDeEdad = ({ edad }) => edad >= MAYORIA_DE_EDAD
+// const esMayorDeEdad = ({ nombre, edad }) => edad >= MAYORIA_DE_EDAD ? console.log(`Acceso denegado a ${nombre}`) : console.log(`Acceso Permitido a $(nombre)`);
+
+const mayorEdad = ({edad}) => edad >= MAYORIA_DE_EDAD
+const acceso = (persona) => mayorEdad(persona) ?
+console.log('pase usted') : console.log('acceso denegado')
+
+const mi_acceso = ({edad, nombre}) => (edad >= MAYORIA_DE_EDAD) 
+                                    ? console.log(`Bienvenid@ ` + nombre) 
+                                    :console.log('Acceso denegado,  no eres bienvenid@ '+ nombre) ;
 
 function imprimirSiEsMayorDeEdad(persona) {
   if (esMayorDeEdad(persona)) {

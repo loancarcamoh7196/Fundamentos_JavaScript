@@ -32,3 +32,8 @@ while (sacha.peso > META) {
 }
 
 console.log(`Pasaron ${dias} días hasta que ${sacha.nombre} adelgazó 3kg`)
+
+
+
+
+

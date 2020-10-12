@@ -1,8 +1,8 @@
 var sacha = {
-  nombre: 'Sacha',
+  nombre: 'Lorena',
   apellido: 'Lifszyc',
-  edad: 28,
-  peso: 75
+  edad: 24,
+  peso: 90
 }
 
 console.log(`Al inicio del año ${sacha.nombre} pesa ${sacha.peso}kg`)
@@ -27,3 +27,18 @@ for (var i = 1; i <= DIAS_DEL_ANO; i++) {
 }
 
 console.log(`Al final del año ${sacha.nombre} pesa ${sacha.peso.toFixed(1)}kg`)
+
+/**
+ * generar un número aleatorio entre dos números que queramos:
+ */
+
+const numMax = 10
+const numMin = 1
+
+const numRandom = () => Math.round(Math.random() * (numMax - numMin) + numMin)
+// redondeamos el decimal que nos devuelve envolviendo todo en Math.round
+
+numRandom() // 8
+numRandom() // 5
+numRandom() // 1
+numRandom() // 10
